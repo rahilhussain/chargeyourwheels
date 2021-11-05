@@ -3,7 +3,7 @@ import 'package:http/http.dart' as http;
 import 'dart:convert' as convert;
 
 class PlacesService {
-  final key = 'AIzaSyCyztGBbS0fKZ0KmzZ8TTZ6bsHLeW5ZILM';
+  final key = 'key';
   static String place = 'electricvehilcechargingstations';
   Future<List<Place>> getPlaces(double lat, double lng) async {
     var response = await http.get(
